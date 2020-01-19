@@ -118,6 +118,15 @@ views.py/
 
         return render(request, 'shop/detail.html', {'product': product, 'add_to_cart':add_to_cart})
 ```
+
+## 2주차
+
+SITE_ID?
+
+settings.py에서 그냥 복붙했던 코드들의 정체들
+
+crawling
+
 ---
 
 *original source = https://github.com/Baepeu/onlineshop*
