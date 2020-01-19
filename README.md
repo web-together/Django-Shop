@@ -13,7 +13,12 @@
 
 ## 1주차
 
+https://github.com/web-together/Django-Shop/blob/master/docs/1st.md#1%EC%A3%BC%EC%B0%A8
 
+
+## 2주차 
+
+https://github.com/web-together/Django-Shop/blob/master/docs/2nd.md
 
 ---
 
