@@ -25,8 +25,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shop'
+    'shop',
+    'django.contrib.sites', ##
+    'allauth', 
+    'allauth.account', # 가입한 계정관리  
+    'allauth.socialaccount', # 소셜계정으로 가입한 계정관리
+    'allauth.socialaccount.providers.naver' # provider
 ]
+# https://django-allauth.readthedocs.io/en/latest/
+
+# 어떤 형식의 로그인을 사용할 것인지 결정
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
