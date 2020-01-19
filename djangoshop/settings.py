@@ -33,9 +33,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.naver' # provider
 ]
 # https://django-allauth.readthedocs.io/en/latest/
+# naver api key : https://developers.naver.com/products/login/api
 
 # 어떤 형식의 로그인을 사용할 것인지 결정
-
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
