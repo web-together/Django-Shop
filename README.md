@@ -29,6 +29,7 @@
     - URL 패턴 이름을 가지고 해당 패턴을 찾아 주소를 만들어주는 함수
     - 되돌아갈 페이지의 패턴 이름이 `product app`의 `product_in_category` 인 셈
     - args는 여러 값들을 리스트로 전달하는 데에 사용 (url을 만드는 데에 필요한 pk)
+    - detail view를 제공하는 객체에 대해서 무조건 
 
 template tag 상의 `{% url 'detail' object.id %}` 와 본질적으로 같다
 

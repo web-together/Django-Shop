@@ -18,7 +18,8 @@ def product_in_category(request, category_slug=None):
                   'products': products})
 
 # detail view
-def product_detail(request, id, product_slug=None):
-    product = get_object_or_404(Product, id=id, slug=product_slug)
+
+def product_detail(request, id, product_slug = None):
+    product = get_object_or_404(Product, id=id, slug = product_slug)
 
     return render(request, 'shop/detail.html', {'product': product, 'add_to_cart':add_to_cart})
