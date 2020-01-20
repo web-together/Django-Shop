@@ -30,7 +30,8 @@ INSTALLED_APPS = [
     'allauth', 
     'allauth.account', # 가입한 계정관리  
     'allauth.socialaccount', # 소셜계정으로 가입한 계정관리
-    'allauth.socialaccount.providers.naver' # provider
+    'allauth.socialaccount.providers.naver', # provider
+    'cart',
 ]
 # https://django-allauth.readthedocs.io/en/latest/
 # naver api key : https://developers.naver.com/products/login/api
