@@ -46,6 +46,8 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 
+# Session ID 추가
+CART_ID = 'cart_in_session'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
