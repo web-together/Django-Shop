@@ -35,9 +35,42 @@ MIDDLEWARE = [
     ....
 ```
 
-#### 세션 생성
+#### 세션
 
+세션은 사전 형식으로 이루어져 있으며 views.py가 받는 request 인자 (HTTPRequest)를 통해 접근할 수 있습니다.
+
+```
+# key값(e.g. 'my_car')으로 세션값 받아오기. 없다면 KeyError
+my_car = request.session['my_car']
+
+# 세션 값 받아오기. 만일 없다면 두 번째 인자로 디폴트 값 생성
+my_car = request.session.get('my_car', 'mini')
+
+# 세션 값 설정하기. 
+request.session['my_car'] = 'mini'
+
+# 세션 값 지우기 
+del request.session['my_car']
+```
+
+**예제 : Session을 통한 댓글 저장코드**
+```
+def post_comment(request, new_comment):
+
+    # 'has_commented' 라는 key 가 있다면 value 를 return 하고, 아니면 False 를 return 합니다.)
+    if request.session.get('has_commented', False):
+        return HttpResponse("You've already commented.")
+    
+    c = comments.Comment(comment=new_comment)
+    c.save()
+    
+    # has_commented 를 True로 설정
+    request.session['has_commented'] = True
+    return HttpResponse('Thanks for your comment!')
+```
 
 #### 세션 저장
+
+
 
 #### 예제 코드 (프로젝트 코드)
