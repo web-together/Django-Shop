@@ -72,5 +72,5 @@ def post_comment(request, new_comment):
 
 #### 예제 코드 (프로젝트 코드)
 
-[cart/views.py](https://github.com/kangtegong/Share-Electronics/blob/master/cart/views.py)
-[cart/cart.py](https://github.com/kangtegong/Share-Electronics/blob/master/cart/cart.py)
+ - [cart/views.py](https://github.com/kangtegong/Share-Electronics/blob/master/cart/views.py)
+ - [cart/cart.py](https://github.com/kangtegong/Share-Electronics/blob/master/cart/cart.py)
