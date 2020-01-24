@@ -20,6 +20,10 @@ https://github.com/web-together/Django-Shop/blob/master/docs/1st.md#1%EC%A3%BC%E
 
 https://github.com/web-together/Django-Shop/blob/master/docs/2nd.md
 
+## 3주차
+
+https://github.com/web-together/Django-Shop/blob/master/docs/3rd.md
+
 ---
 
 *original source = https://github.com/Baepeu/onlineshop*
