@@ -33,7 +33,10 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.naver', # provider
     'cart',
     'coupon',
+    'order',
 ]
+
+# https://www.iamport.kr/
 # https://django-allauth.readthedocs.io/en/latest/
 # naver api key : https://developers.naver.com/products/login/api
 
@@ -133,3 +136,7 @@ MEDIA_URL = '/products/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, )
+
+# IAMPORT_KEY = REST_API KEY, IAMPORT_SECRET = 'REST_API SECRET'
+IAMPORT_KEY = 'KEY값 여기에 쓰기'
+IAMPORT_SECRET = 'SECRET값 여기에 쓰기'
