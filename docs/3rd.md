@@ -4,6 +4,10 @@
 
 Selenium
 
+https://wikidocs.net/66372
+
+https://beomi.github.io/gb-crawling/posts/2017-02-27-HowToMakeWebCrawler-With-Selenium.html
+
 ### Session 만들기
 
 django session
